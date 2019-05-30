@@ -1,6 +1,7 @@
 /**
- * Algoritmo criptográfico simples para exemplificação
- *
+ * Algoritmo criptográfico simples -- por substituição monoalfabética -- para exemplificação
+ * Autor: André Leon S. Gradvohl, Dr.
+ * Última atualização Last version: qui 30 mai 2019 15:41:27 -03
  */ 
 #include <stdio.h>
 #include <stdlib.h>

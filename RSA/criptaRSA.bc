@@ -1,0 +1,25 @@
+/**
+ * Programa para encriptar ou desencriptar uma mensagem.
+ *
+ * Utilização: 
+ *   bc -q script
+ *
+ * Se quiser, para enviar os parametros diretamente ao script,
+ * pode executar o comando a seguir:
+ *
+ * echo "<valor de m> <valor da chave> <valor de n> | bc -q criptaRSA.bc"
+ */
+
+/*Valor da mensagem*/
+/*print "Digite o valor da mensagem\n";*/
+m = read();
+/*Valor da chave*/
+/*print "Digite o valor da chave\n";*/
+chave = read();
+/*Valor de n*/
+/*print "Digite o valor de n\n";*/
+n = read();
+c = (m^chave) % n
+/*print "Valor criptografado: ";*/
+c
+quit

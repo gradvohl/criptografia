@@ -2,7 +2,8 @@
  * Algoritmo para calcular os valores de d, baseado nos valores de p, q e e, para o algoritmo RSA.
  *
  * Prof. Andre Leon Sampaio Gradvohl, Dr.
- * gradvohl@ft.unicamp.br
+ * Ultima atualizacao: qui 30 mai 2019 16:22:10 -03
+ *
  */ 
 #include <stdio.h>
 #include <stdlib.h>
@@ -25,14 +26,14 @@ unsigned int maximoFatorComum(unsigned long long int n1, unsigned long long int 
  */ 
 void calculaD(unsigned long long int e, unsigned long long int z, unsigned int li, unsigned int ls)
 {
-  unsigned int i;
+  register unsigned int i;
 
   for (i=li; i<=ls; i++)
   {
     if (i==1) continue;
 
     if ( !((e*i - 1) % z))
-        printf("e = %lld; d = %d\n\t", e, i);
+        fprintf(stdout,"e = %lld; d = %d\n\t", e, i);
   }
 
 }

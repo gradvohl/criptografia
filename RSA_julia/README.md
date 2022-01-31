@@ -17,7 +17,7 @@ julia calculaRSA.jl <valor p> <valor q> <valor e> <limite inferior busca> <limit
 
 Por exemplo:
 ```bash
-julia calculaRSA.jl 7 13 5 10 50o
+julia calculaRSA.jl 7 13 5 10 500
 ```
 
 A resposta do programa são os valores de ``p``, ``q``, ``n``, ``z`` e ``e``, dentro dos limites inferior e superior da busca.
